@@ -16,10 +16,10 @@
       $scope.stat = true;
       $scope.empty = false;
       var allDishes = $scope.dishes.split(',');
-      var dishes = allDishes.filter(function(t) {
+      var allDishesTwo = allDishes.filter(function(t) {
                    return t.trim() !== '';
                });
-      if(dishes.length <= 3){
+      if(allDishesTwo.length <= 3){
         $scope.message = 'Enjoy!';
       }else{
         $scope.message = 'Too much!';
