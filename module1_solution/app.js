@@ -2,7 +2,6 @@
 'use strict';
 
 angular.module('LunchCheck', [])
-
 .controller('LunchCheckController', function ($scope) {
   $scope.dishes = "";
   $scope.message = "";
