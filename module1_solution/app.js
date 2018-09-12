@@ -1,6 +1,7 @@
 (function() {
     'use strict';
-  angular.module('LunchCheck', []).controller('LCController', LCController);
+    angular.module('LunchCheck', [])
+         .controller('LCController', LCController);
   LCController.$inject = ['$scope'];
   function LLController($scope) {
   $scope.dishes = "";
@@ -26,5 +27,5 @@
       }
     }
   };
-};
+}
 })();
