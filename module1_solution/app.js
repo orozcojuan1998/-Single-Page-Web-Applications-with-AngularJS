@@ -1,9 +1,9 @@
 (function() {
     'use strict';
-    angular.module('LunchCheck', [])
-         .controller('LCController', LCController);
-  LCController.$inject = ['$scope'];
-  function LLController($scope) {
+
+  angular.module('LunchCheck', [])
+.controller('LunchCheckController', LunchCheckController);
+  function LunchCheckController($scope) {
   $scope.dishes = "";
   $scope.message = "";
   $scope.stat = false;
