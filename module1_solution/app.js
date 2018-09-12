@@ -12,6 +12,7 @@ angular.module('LunchCheck', [])
       $scope.empty = true;
     }
     else{
+      $scope.empty = true;
       var allDishes = $scope.dishes.split(',');
       var dishes = allDishes.filter(function(t) {
                    return t.trim() !== '';
