@@ -5,8 +5,7 @@ angular.module('LunchCheck', [])
 
 .controller('LunchCheckController', function ($scope) {
   $scope.dishes = "";
-  $scope.message = ""
-  $scope.empty = false;
+  $scope.message = "";
 
   $scope.checkDishes = function () {
     if($scope.dishes.trim() === 0){
