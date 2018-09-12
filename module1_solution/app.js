@@ -1,14 +1,14 @@
-(function () {
-'use strict';
-
-angular.module('LunchCheck', [])
-.controller('LunchCheckController', function ($scope) {
+(function() {
+    'use strict';
+  angular.module('LunchCheck', []).controller('LCController', LCController);
+  LCController.$inject = ['$scope'];
+  function LLController($scope) {
   $scope.dishes = "";
   $scope.message = "";
   $scope.stat = false;
 
 
-  $scope.checkDishes = function () {
+  $scope.checkLunch = function () {
     if($scope.dishes.trim() === 0){
       $scope.empty = true;
     }
@@ -26,9 +26,5 @@ angular.module('LunchCheck', [])
       }
     }
   };
-
-
-});
-
-
+};
 })();
