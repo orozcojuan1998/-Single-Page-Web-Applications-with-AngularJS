@@ -6,7 +6,7 @@ angular.module('LunchCheck', [])
 .controller('LunchCheckController', function ($scope) {
   $scope.dishes = "";
   $scope.message = "";
-  $scope.status = false;
+  $scope.stat = false;
 
 
   $scope.checkDishes = function () {
@@ -14,7 +14,7 @@ angular.module('LunchCheck', [])
       $scope.empty = true;
     }
     else{
-      $scope.status = true;
+      $scope.stat = true;
       $scope.empty = false;
       var allDishes = $scope.dishes.split(',');
       var dishes = allDishes.filter(function(t) {
